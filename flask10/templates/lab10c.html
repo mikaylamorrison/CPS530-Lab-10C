@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='lab10c.css')}}">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>CPS530: Lab 10C (Mikayla M.)</title>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>
+					Lab 10C: The Flask Framework
+				</h1>
+			</header>
+			
+			<main>
+			
+				<section>
+					<h3>The Framework</h3>
+                    <p>For this lab, I decided to use a framework called Flask; a lightweight python-based web-application framework. 
+                        I decided to use this framework given its ease of use and compatibility with MacOS. 
+                        Please note that all command lines were executed in terminal as I was using a MacOS system for this section of the lab. 
+                        Also, each of the commands were executed as written; the name of my flask folder was flask10. 
+                    </p>
+				</section>
+				<hr>
+
+                <section>
+					<h3>Framework Installation</h3>
+                    <p>Flask installation is very simple as it only need be installed from the command line.</p>
+                    <ol type="1">
+                        <li>Open Terminal</li>
+                        <li>Install Python</li>
+                            <ol>
+                                <li><mark>brew install python3</mark></li>
+                            </ol>
+                        <li>Create a folder and navigate into it</li>
+                            <ol>
+                                <li><mark>mkdir flask10</mark></li>
+                                <li><mark>cd flask10</mark></li>
+                            </ol>
+                        <li>Install Flask in the current folder</li>
+                            <ol>
+                                <li><mark>pip install flask</mark></li>
+                            </ol>
+                        <li>Create an __init__.py file</li>
+                            <ol>
+                                <li><mark>touch __init__.py</mark></li>
+                                <li><mark>vim __init__.py</mark></li>
+                                <li>Copy and paste <a href="https://www.geeksforgeeks.org/flask-creating-first-simple-application/">the template</a> into the __init__.py file</li>
+                                <br>
+                                <img src="{{ url_for('static', filename='skeleton.png')}}" alt="Skeleton"  width="400">
+                            </ol>
+                    </ol> 
+				</section>
+				<hr>
+
+                <section>
+					<h3>Building the Page</h3>
+                    <p>Once Flask has been installed and the init file has been created, 
+                        the template and static files for the program can be constructed. Keep in mind
+                        that all template and static files will form the content for the webpage. 
+                    </p>
+                    <ol type="1">
+                        <li>In the current directory, create a folder called <mark>templates'</li>
+                        <li>Navigate to the folder called <mark>templates</mark></li>
+                        <li>Inside the <mark>templates</mark> folder, construct an HTML file</li>
+                        <li>Go back to the original flask directory, create a folder called <mark>static</mark></li>
+                        <li>Inside the <mark>static</mark> folder, construct a CSS file</li>
+                        <li>Connect the CSS to the HTML using the link tag in the head of the HTML file</li>
+                            <ol>
+                                <img src="{{ url_for('static', filename='linkCSS.png')}}" alt="linkCSS"  width="400">
+                            </ol>
+                        <li>Link the HTML file to the __init__.py file</li>
+                            <ol>
+                                <img src="{{ url_for('static', filename='linkHTML.png')}}" alt="linkHTML"  width="400">
+                            </ol>
+                        <li>Run __init__.py to view your webpage</li>
+                        <ol>
+                            <li><mark>flask --app flask10 run --debug</mark></li>
+                        </ol>
+                    </ol> 
+				</section>
+				<hr>
+
+                <section>
+					<h3>Hosting</h3>
+                    <ol type="1">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol> 
+				</section>
+				<hr>
+
+                <section>
+					<h3>Challenges</h3>
+                    <p></p>
+				</section>
+				<hr>
+				
+			</main>
+		</div>
+		<footer>
+			<p>Author: Mikayla Morrison</p>
+			<p>Student Number: 501182358</p>
+			<p><a href="mailto:m1morrison@torontomu.ca">Email: m1morrison@torontomu.ca</a> </p>
+			<p>Class: CPS530</p>
+			<p>Section: 7</p>
+		</footer>
+	</body>
+
+</html>
